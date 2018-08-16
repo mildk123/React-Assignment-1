@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Quicksand');
+
+
+
+#header{
+    text-align: center;
+    font-size: 3em;
+    padding: 0%;
+    margin: 0%;
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);    
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+
+
+/* Add some padding inside the card container */
+.container {    
+    padding: 12px 16px;
+    white-space: pre-line;
+    background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);    
+    list-style: none;
+    color: white;
+    text-shadow: 0px 1px 2px black;
+    float: left;
+    text-indent: 50px;
+    min-height: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 1%;
+    margin-right: 0%;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 25px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+/* On mouse-over, add a deeper shadow */
+.container:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.575);
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in;
+    -webkit-transition: opacity 0.3s ease-in;
+}
+
+#myModal{
+    text-indent: 12px;
+    font-size: 1.0em;
+}
+
+#myModal:hover{
+    cursor: text;
+    opacity: 1.0;
+}
+
+#post{
+    font-size: 1.4em;
+    text-indent: 45%;
+    display: block;
+    clear: left;
+}
+#title{
+    font-size: 1.4em;    
+    text-indent: 0;
+    display: block;
+    clear: left;
+}
+#body{
+    font-size: 1.4em;    
+    text-indent: 0;
+    display: block;
+    clear: left;
+}

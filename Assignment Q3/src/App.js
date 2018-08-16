@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
+
 const posts = [
   {
     userId: 1,
@@ -944,12 +945,10 @@ const users = [
   }
 ];
 function getPost(value, matchTerm) {
-  {
     if (value.userId === matchTerm) {
-      return [<li key={value.id}><b>Title:</b> {value.title},
-      <b>Body:</b> {value.body}</li>
-        ]
-    }
+      return <li id="text" key={value.id}><b id="title">Title:</b> {value.title}
+      <b id="body">Body:</b> {value.body}</li>
+      
   }
 }
 
@@ -957,22 +956,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>Assignment #3</h2>
+        <h2 id="header">Assignment #3</h2>
         <div>
           <ul>
-            {users.map((users, index) => {
+            {users.map((users) => {
               return [
-                <li key={users.Username}>Username: {users.username}</li>,
-                <li key={users.name}>Name: {users.name}</li>,
-                <li key={users.email}>E-mail: {users.email} </li>,
-                <li key={users.id}>UserId: {users.id}</li>,
-                <ol key="Posts">
-                    Posts:
+                <div id="myBtn" className="container">
+                <li key={users.Username}><b>Username: </b>{users.username}</li>
+                <li key={users.name}><b>Name: </b>{users.name}</li>
+                <li key={users.email}><b>E-mail: </b>{users.email} </li>
+                <li key={users.id}><b>UserId: </b>{users.id}</li>  
+                <ol className="myModal" key="Posts">
+                <b id="post">Posts </b>
                     {posts.map((value, index) => {
                       return getPost(value, users.id);
                       // return value.userId
                     })}
                 </ol>
+                </div>
               ];
             })}
           </ul>
